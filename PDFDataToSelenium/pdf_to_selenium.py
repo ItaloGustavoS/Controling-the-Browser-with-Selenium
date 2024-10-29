@@ -21,7 +21,7 @@ def fill_form_with_selenium(content):
     driver = webdriver.Chrome(
         executable_path=r"C:\Users\Felipe LM\Documents\GitHub\Controling-the-Browser-with-Selenium\PDFDataToSelenium\ChromeDriver\chromedriver.exe"
     )
-    driver.get("URL_DO_FORMULARIO")
+    driver.get("https://formsmarts.com/html-form-example")
 
     # Localize os campos e preencha com o conteúdo do PDF
     # Exemplo genérico:
