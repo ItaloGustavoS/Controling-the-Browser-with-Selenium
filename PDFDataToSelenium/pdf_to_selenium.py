@@ -40,6 +40,9 @@ def fill_form_with_selenium(content):
     driver.quit()
 
 
+# Defina o caminho do PDF
+pdf_path = r"C:\Users\Felipe LM\Documents\GitHub\Controling-the-Browser-with-Selenium\PDFDataToSelenium\PDFs\form_Sample.pdf"  # Substitua pelo caminho real do seu PDF
+
 # Extraia o conteúdo do PDF e preencha o formulário
-pdf_content = pdf_to_text("seu_arquivo.pdf")
+pdf_content = pdf_to_text(pdf_path)
 fill_form_with_selenium(pdf_content)
