@@ -1,4 +1,4 @@
-import pymupdf  # PyMuPDF
+import pymupdf
 from markdownify import markdownify as md
 
 
