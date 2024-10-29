@@ -20,5 +20,8 @@ def pdf_to_markdown(pdf_path, md_path):
     print(f"Conteúdo salvo em {md_path}")
 
 
-# Exemplo de uso para testes
-pdf_to_markdown("seu_arquivo.pdf", "seu_arquivo.md")
+# Exemplo de uso com o caminho do PDF
+pdf_to_markdown(
+    r"C:\Users\Felipe LM\Documents\GitHub\Controling-the-Browser-with-Selenium\PDFDataToSelenium\PDFs\sample.pdf",
+    "seu_arquivo.md",
+)
