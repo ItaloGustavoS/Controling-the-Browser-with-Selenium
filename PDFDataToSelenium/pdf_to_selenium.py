@@ -25,7 +25,7 @@ def fill_form_with_selenium(content):
 
     # Localize os campos e preencha com o conteúdo do PDF
     # Exemplo genérico:
-    field1 = driver.find_element(By.ID, "campo1")
+    field1 = driver.find_element(By.ID, "u_wPL_4609")
     field1.send_keys(content)  # Insira o texto do PDF
 
     # Adicione mais campos conforme necessário
@@ -41,7 +41,7 @@ def fill_form_with_selenium(content):
 
 
 # Defina o caminho do PDF
-pdf_path = r"C:\Users\Felipe LM\Documents\GitHub\Controling-the-Browser-with-Selenium\PDFDataToSelenium\PDFs\form_Sample.pdf"  # Substitua pelo caminho real do seu PDF
+pdf_path = r"C:\Users\Felipe LM\Documents\GitHub\Controling-the-Browser-with-Selenium\PDFDataToSelenium\PDFs\form_Sample.pdf"
 
 # Extraia o conteúdo do PDF e preencha o formulário
 pdf_content = pdf_to_text(pdf_path)
