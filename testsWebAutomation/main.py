@@ -9,9 +9,7 @@ from datetime import datetime
 from selenium.webdriver.chrome.service import Service
 
 # Definir os diretórios de log
-log_dir = (
-    "C:\\Users\\Felipe LM\\Documents\\GitHub\\CrewAi-Llama3.1\\testsWebAutomation\\Logs"
-)
+log_dir = "C:\\Users\\Felipe LM\\Documents\\GitHub\\Controling-the-Browser-with-Selenium\\testsWebAutomation\\Logs"
 
 
 # Função para configurar o log
@@ -135,7 +133,7 @@ def main():
     logging.info("Início da automação.")
 
     # Caminho onde o chromedriver está localizado
-    chrome_driver_path = "C:\\Users\\Felipe LM\\Documents\\GitHub\\CrewAi-Llama3.1\\testsWebAutomation\\ChromeDriver\\chromedriver.exe"
+    chrome_driver_path = "C:\\Users\\Felipe LM\\Documents\\GitHub\\Controling-the-Browser-with-Selenium\\testsWebAutomation\\ChromeDriver\\chromedriver.exe"
 
     # Inicializar o navegador
     driver = inicializar_navegador(chrome_driver_path)
