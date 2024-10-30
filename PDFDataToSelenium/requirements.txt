@@ -1,3 +1,5 @@
-pymupdf
-markdownify
 selenium
+opencv-python
+pdf2image
+pytesseract
+numpy
