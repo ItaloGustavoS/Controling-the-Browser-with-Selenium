@@ -43,7 +43,7 @@ def display_pdf_page(pdf_path, page_num=0):
 
 
 # Caminho para o PDF e visualização da página
-pdf_path = r"C:\caminho\para\seu_arquivo.pdf"
+pdf_path = r"C:\Users\Felipe LM\Documents\GitHub\Controling-the-Browser-with-Selenium\PDFDataToSelenium\PDFs\form_Sample.pdf"
 image = display_pdf_page(pdf_path, page_num=0)
 
 # Configura a janela e o mouse callback

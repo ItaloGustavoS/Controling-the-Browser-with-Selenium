@@ -5,7 +5,7 @@ import numpy as np
 
 # Caminho do Poppler (necessário para Windows)
 pytesseract.pytesseract.tesseract_cmd = (
-    r"C:\Caminho\para\tesseract.exe"  # Substitua pelo caminho real
+    r"C:\Program Files\Tesseract-OCR\tesseract.exe"  # Substitua pelo caminho real
 )
 
 
@@ -43,5 +43,5 @@ def main(pdf_path):
 
 
 # Caminho do PDF
-pdf_path = r"C:\caminho\para\seu_arquivo.pdf"
+pdf_path = r"C:\Users\Felipe LM\Documents\GitHub\Controling-the-Browser-with-Selenium\PDFDataToSelenium\PDFs\form_Sample.pdf"
 main(pdf_path)
