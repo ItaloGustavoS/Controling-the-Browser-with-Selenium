@@ -35,21 +35,26 @@ def draw_rectangle(event, x, y, flags, param):
 
 def display_pdf_page(pdf_path, page_num=0):
     # Converte a página do PDF em uma imagem
-    images = convert_from_path(
-        pdf_path, poppler_path=r"C:\Program Files (x86)\poppler\Library\bin"
-    )
+    images = convert_from_path(pdf_path, poppler_path=r"C:\poppler\bin")
     img = np.array(images[page_num])
     img = cv2.cvtColor(img, cv2.COLOR_RGB2BGR)
-
     return img
+
+
+def resize_image(img, width=800, height=600):
+    # Redimensiona a imagem para caber em uma janela de tamanho fixo
+    return cv2.resize(img, (width, height))
 
 
 # Caminho para o PDF e visualização da página
 pdf_path = r"C:\Users\Felipe LM\Documents\GitHub\Controling-the-Browser-with-Selenium\PDFDataToSelenium\PDFs\form_Sample.pdf"
 image = display_pdf_page(pdf_path, page_num=0)
 
+# Redimensiona a imagem para um tamanho fixo (ajuste conforme necessário)
+image = resize_image(image, width=800, height=600)
+
 # Configura a janela e o mouse callback
-cv2.namedWindow("Imagem PDF")
+cv2.namedWindow("Imagem PDF", cv2.WINDOW_NORMAL)
 cv2.setMouseCallback("Imagem PDF", draw_rectangle)
 
 cv2.imshow("Imagem PDF", image)
