@@ -35,7 +35,9 @@ def draw_rectangle(event, x, y, flags, param):
 
 def display_pdf_page(pdf_path, page_num=0):
     # Converte a página do PDF em uma imagem
-    images = convert_from_path(pdf_path)
+    images = convert_from_path(
+        pdf_path, poppler_path=r"C:\Program Files (x86)\poppler\Library\bin"
+    )
     img = np.array(images[page_num])
     img = cv2.cvtColor(img, cv2.COLOR_RGB2BGR)
 
