@@ -1,4 +1,4 @@
-import pymupdf  # Certifique-se de que o pymupdf está instalado
+import pymupdf
 
 # Caminho para o seu PDF
 pdf_path = r"C:\Users\Felipe LM\Documents\GitHub\Controling-the-Browser-with-Selenium\PDFDataToSelenium\PDFs\PDF Felipe.PDF"
