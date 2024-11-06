@@ -34,10 +34,10 @@ def extract_data_from_pdf(pdf_path):
                     cnpj_index : text.index("\n", cnpj_index)
                 ].strip()
 
-            if "Data entrega" in text:
-                data_entrega_index = text.index("Data entrega") + len("Data entrega")
-                extracted_data["Data entrega"] = text[
-                    data_entrega_index : text.index("\n", data_entrega_index)
+            if "Fornecedor" in text:
+                fornecedor_index = text.index("Fornecedor") + len("Fornecedor")
+                extracted_data["Fornecedor"] = text[
+                    fornecedor_index : text.index("\n", fornecedor_index)
                 ].strip()
 
     return extracted_data
