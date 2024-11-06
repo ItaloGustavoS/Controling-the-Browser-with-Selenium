@@ -14,7 +14,7 @@ def extract_data_from_pdf(pdf_path):
             page = pdf[page_num]
             text = page.get_text("text")
 
-            # Exemplo de busca de campos por palavras-chave
+            # Busca de campos por palavras-chave
             if "Nome:" in text:
                 nome_index = text.index("Nome:") + len("Nome:")
                 extracted_data["Nome"] = text[
@@ -32,6 +32,91 @@ def extract_data_from_pdf(pdf_path):
                 cnpj_index = text.index("CNPJ:") + len("CNPJ:")
                 extracted_data["CNPJ"] = text[
                     cnpj_index : text.index("\n", cnpj_index)
+                ].strip()
+
+            if "Fornecedor" in text:
+                fornecedor_index = text.index("Fornecedor") + len("Fornecedor")
+                extracted_data["Fornecedor"] = text[
+                    fornecedor_index : text.index("\n", fornecedor_index)
+                ].strip()
+
+            if "Fornecedor" in text:
+                fornecedor_index = text.index("Fornecedor") + len("Fornecedor")
+                extracted_data["Fornecedor"] = text[
+                    fornecedor_index : text.index("\n", fornecedor_index)
+                ].strip()
+
+            if "Fornecedor" in text:
+                fornecedor_index = text.index("Fornecedor") + len("Fornecedor")
+                extracted_data["Fornecedor"] = text[
+                    fornecedor_index : text.index("\n", fornecedor_index)
+                ].strip()
+
+            if "Fornecedor" in text:
+                fornecedor_index = text.index("Fornecedor") + len("Fornecedor")
+                extracted_data["Fornecedor"] = text[
+                    fornecedor_index : text.index("\n", fornecedor_index)
+                ].strip()
+
+            if "Fornecedor" in text:
+                fornecedor_index = text.index("Fornecedor") + len("Fornecedor")
+                extracted_data["Fornecedor"] = text[
+                    fornecedor_index : text.index("\n", fornecedor_index)
+                ].strip()
+
+            if "Fornecedor" in text:
+                fornecedor_index = text.index("Fornecedor") + len("Fornecedor")
+                extracted_data["Fornecedor"] = text[
+                    fornecedor_index : text.index("\n", fornecedor_index)
+                ].strip()
+
+            if "Nome:" in text:
+                nome_index = text.index("Nome:") + len("Nome:")
+                extracted_data["Nome"] = text[
+                    nome_index : text.index("\n", nome_index)
+                ].strip()
+
+            if "Endereço:" in text:
+                endereco_index = text.index("Endereço:") + len("Endereço:")
+                extracted_data["Endereço"] = text[
+                    endereco_index : text.index("\n", endereco_index)
+                ].strip()
+
+            # Adicione mais palavras-chave conforme a necessidade
+            if "CNPJ:" in text:
+                cnpj_index = text.index("CNPJ:") + len("CNPJ:")
+                extracted_data["CNPJ"] = text[
+                    cnpj_index : text.index("\n", cnpj_index)
+                ].strip()
+
+            if "Fornecedor" in text:
+                fornecedor_index = text.index("Fornecedor") + len("Fornecedor")
+                extracted_data["Fornecedor"] = text[
+                    fornecedor_index : text.index("\n", fornecedor_index)
+                ].strip()
+
+            if "Fornecedor" in text:
+                fornecedor_index = text.index("Fornecedor") + len("Fornecedor")
+                extracted_data["Fornecedor"] = text[
+                    fornecedor_index : text.index("\n", fornecedor_index)
+                ].strip()
+
+            if "Fornecedor" in text:
+                fornecedor_index = text.index("Fornecedor") + len("Fornecedor")
+                extracted_data["Fornecedor"] = text[
+                    fornecedor_index : text.index("\n", fornecedor_index)
+                ].strip()
+
+            if "Fornecedor" in text:
+                fornecedor_index = text.index("Fornecedor") + len("Fornecedor")
+                extracted_data["Fornecedor"] = text[
+                    fornecedor_index : text.index("\n", fornecedor_index)
+                ].strip()
+
+            if "Fornecedor" in text:
+                fornecedor_index = text.index("Fornecedor") + len("Fornecedor")
+                extracted_data["Fornecedor"] = text[
+                    fornecedor_index : text.index("\n", fornecedor_index)
                 ].strip()
 
             if "Fornecedor" in text:
